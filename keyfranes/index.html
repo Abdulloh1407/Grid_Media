@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documen</title>
+    <style>
+        header {
+            height: 90vh;
+            border: solid;
+            position: relative;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .child {
+            transition: all 0.5s ease;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            animation: img 0.6s infinite;
+            border-radius: 30px;
+        }
+        button{
+            padding: 8px 35px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: blue;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+        }
+        @keyframes img {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(-360deg);
+
+            }
+           
+            
+        }
+
+        /* @keyframes img {
+
+            from {
+                transform: scale(0.5);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        } */
+
+        /* @keyframes changecolor{
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: red;
+            }
+            25%{
+                left: 1320px;
+                background-color: blue;
+            }
+            
+            50%{
+                bottom: 0px;
+                left: 1320px;
+                background-color: green;
+            }
+            
+
+            100%{
+                left: 0px;
+                bottom: 0px;
+                background-color: rgb(150, 140, 140);
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="child">
+            <button>
+            <img src="https://png.pngtree.com/png-clipart/20190918/ourmid/pngtree-load-the-3273350-png-image_1733730.jpg" alt="">
+            <p>Proccesing</p>        
+        </button>
+        </div>
+
+    </header>
+</body>
+
+</html>
